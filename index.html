@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Rebecca Chen | UX Designer</title>
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/bootstrap-social.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/font-awesome.css">
+
+  <style>
+  body {
+    position: relative;
+  }
+  .jumbotron {
+    background: url('bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    text-align: center;
+    margin: 1% 0 0 0;
+  }
+  .jt-caption {
+    color: #3acec2;
+/*    background: rgba(256,256,256, 0.1);*/
+    display: inline-block;
+    font-weight: 200;
+    padding: 2%;
+    letter-spacing: .15em;
+  }
+  .navbar-toggle {
+    color: #3acec2;
+    border-color: #3acec2 !important;
+  }
+  #brand-img {
+    max-width: 100px;
+    margin-top: -12px;
+  }
+  .navbar-inverse {
+    background-color: #000;
+  }
+  .navbar-custom .navbar-nav > .active > a {
+    border-radius: 0;
+    color: white;
+    background-color: #3acec2;
+  }
+  .navbar-nav>li>a:hover {
+    background-color: #333 !important;
+  }
+  .white {
+    color: white;
+  }
+  .btn.outline {
+    background: none;
+    padding: 12px 22px;
+    margin-bottom: 2%;
+    margin-top: 5%;
+  }
+  .btn-primary.outline {
+    border: 2px solid #3acec2;
+    color: #3acec2;
+  }
+  .btn-social-icon {
+    background-color: #222;
+    color: #3acec2;
+  }
+  </style>
+</head>
+
+<body data-spy="scroll" data-target=".navbar-fixed-top" data-offset="100">
+  
+  <!-- Header -->
+  <div id="home" class="container-fluid">
+    <header class="main-header"> 
+      <div class="container header-container">
+        <svg class="svg-logo" version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+           width="419.5px" height="120px" viewBox="0 0 419.5 164" enable-background="new 0 0 419.5 164" xml:space="preserve">
+          <g class="logo">
+            <path class="r" fill="none" stroke="#000000" stroke-width="9" d="M21.607,155.277v-139.9c0,0,50.921-4.5,82.894,4.624
+                  c20.148,5.75,30.393,16.801,30.393,35.9c0,0,3.263,42.137-59.446,43.087l56.262,53.841"/>
+            <polyline class="y" fill="none" stroke="#000000" stroke-width="9" points="147.833,11.132 205.797,83.145 263,11.601 "/>
+            <line class="y" fill="none" stroke="#000000" stroke-width="9" x1="205.417" y1="83" x2="205.417" y2="155.667"/>
+            <path class="c" fill="none" stroke="#000000" stroke-width="9" d="M381.486,52.701c0,0-14.237-38.04-52.966-37.939
+                  c0,0-45.266-3.873-53.632,53.238c0,0-12.254,81.487,56.449,82.18c0,0,44.476,2.764,50.634-39.708"/>
+          </g>
+        </svg>
+         
+        <h1 class="name">REBECCA Y. CHEN</h1>
+      </div>
+
+    <!-- Navigation -->
+    <nav id="mainNav" class="navbar navbar-default navbar-inverse navbar-custom navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header page-scroll">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span> Menu <span class="fa fa-bars"></span>
+          </button>
+          <!-- Nav Logo -->
+          <a href="#home" class="navbar-brand">
+            <img id="brand-img" src="img/logoblack.png" alt="">
+          </a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right" style="margin-right: 1%;">
+              <li class="hidden">
+                <a href="#home"></a>
+              </li>
+              <li class="active">
+                <a href="#home" data-toggle="collapse" data-target=".navbar-collapse">HOME</a>
+              </li>
+              <li class="page-scroll">
+                <a href="#about">ABOUT</a>
+              </li>
+              <li class="page-scroll">
+                <a href="#portfolio">PORTFOLIO</a>
+              </li>
+              <li class="page-scroll">
+                <a href="#contact">CONTACT</a>
+              </li>
+              <li>
+                <a href="files/resume.pdf" target="_blank">RESUME</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Jumbotron Home Page -->
+    <div class="row">
+      <div class="jumbotron">
+        <div class="container">
+          <h2 class="jt-caption">USER EXPERIENCE DESIGNER</h2> <br>
+          <h4 class="jt-caption" style="margin-bottom: 10%;">IMAGINE <span class="glyphicon glyphicon-resize-horizontal"></span> INTERACT <span class="glyphicon glyphicon-resize-horizontal"></span> EXPERIENCE</h4>
+          <p>
+            <a href="#portfolio"><span class="glyphicon glyphicon-chevron-down white  glyphicon-align-center"></span></a>
+          </p>
+        </div>
+        
+        <span class="home-button">
+          <a href="#portfolio" type="button" class="btn btn-primary btn-lg outline" role="button"> <span class="glyphicon glyphicon-folder-open" style="padding-right: 10px;"></span> VIEW PORTFOLIO</a>
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ABOUT ME -->
+  <div id="about" class="container-fluid" style="background-image: url(img/photos/chickenbutt.jpg);
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: bottom;
+  background-size: contain;
+  min-height: 500px;">
+    <div class="container about-container">
+      <div class="row">
+        <div class="col-sm-6 col-md-6 col-lg-7">
+          <h3 class="black">ABOUT</h3>
+          <p>Hi, I'm Rebecca from Fountain Valley, CA.</p> 
+
+          <p>I am interested in all things technology and down to try out and play any games!</p>
+
+          <p style="text-align: justify;">First and foremost, welcome to my <a href="#portfolio" class="internal">design portfolio</a>! I am currently a Master of Information Science student studying Human-Computer Interaction at University of Michigan in Ann Arbor. I love going out to experience new things, meet people, and am constantly looking for more things to learn and aquire skills in.</p>
+          
+          <p style="text-align: justify;">I am absolutely fascinated by the relationship between human and technology. During my time at UC Irvine, I completed an undergrad honors thesis on the perception of gravity in a rotating virtual environment and studied the effects of resulting cybersickness from the use of Oculus Rift. This experience really spurred my interest in pursing a career in UI/UX/Interaction Design.</p><br>
+        </div>
+
+        <div class="col-sm-3 col-md-6 col-lg-4">
+          <h3 class="black">EDUCATION</h3>
+          <h5>UNIVERSITY OF MICHIGAN, ANN ARBOR</h5>
+          <p>Master of Science in Information<br>Specializing in Human-Computer Interaction<br>2018</p>
+          <h5>UNIVERSITY OF CALIFORNIA, IRVINE</h5>
+          <p>Cognitive Sciences B.S. (Honors)<br>Specialized in Computation<br>Management Minor<br>2015</p>
+          <!-- <img src="img/photos/chickenbutt.jpg" alt=""> -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PORTFOLIO  -->
+  <div id="portfolio" class="container-fluid" style="background-color: #333">
+    <div class="container port">
+      <h3 style="color: #3acec2; padding-bottom: 3%;">PORTFOLIO</h3>
+      <div class="row port-row">
+
+        <!-- 582 Interaction Design -->
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+          <a href="582proj.html">
+          <div class="photo">
+            <img src="img/photos/582.png" alt="Cooking App SI 582"> 
+            <div class="photo-overlay">
+              <h3 class="textstroke">SI 582: INTERACTION DESIGN</h3>
+            </div>
+            <p class="mobile">SI 582: INTERACTION DESIGN</p>
+            <!-- <p class="mobile" style="padding-top: 0; display: inline-block;">SI 582</p> -->
+          </div>
+          </a>
+        </div>
+        
+        <!-- 501 Contextual Inquiry -->
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+          <a href="501pt.html">
+          <div class="photo">
+            <img src="img/photos/501.png" alt="501 Client">  
+            <div class="photo-overlay">
+              <h3 class="textstroke">SI 501: CONTEXTUAL INQUIRY</h3>
+            </div>
+            <p class="mobile">SI 501: CONTEXTUAL INQUIRY</p>
+            <!-- <p class="mobile" style="padding-top: 0; display: inline-block;">SI 501</p> -->
+          </div>
+          </a>
+        </div>
+        
+        <!-- Facebook Design Jam -->
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+          <a href="fbdj.html">
+          <div class="photo">
+            <img src="img/photos/facebook.png" alt="Facebook Design Jam">  
+            <div class="photo-overlay">
+              <h3 class="textstroke">FACEBOOK DESIGN JAM</h3>
+            </div>
+            <p class="mobile">FACEBOOK DESIGN JAM</p>
+          </div>
+          </a>
+        </div>
+
+        <!-- Game User Research 2017 -->
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+          <a href="gur.html">
+          <div class="photo">
+            <img src="img/photos/gur.png" alt="GUR 2017">  
+            <div class="photo-overlay">
+              <h3 class="textstroke">GAME USER RESEARCH 2017</h3>
+            </div>
+            <p class="mobile">GAME USER RESEARCH 2017</p>
+          </div>
+          </a>
+        </div>
+        
+        <!-- Graphic Design -->
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+          <a href="graphic.html">
+          <div class="photo">
+            <img src="img/photos/gd.png" alt="Graphic Designs">  
+            <div class="photo-overlay">
+              <h3 class="textstroke">UI &amp; GRAPHIC DESIGNS</h3>
+            </div>
+            <p class="mobile">UI &amp; GRAPHIC DESIGNS</p>
+          </div>
+          </a>
+        </div>
+        
+      </div>
+    </div>  
+  </div>
+</div>
+
+<!-- CONTACT ME -->
+<div id="contact" class="container-fluid">
+  <div class="container contact-container">
+      <div class="row" style="padding-bottom: 40px;">
+        <div class="col-md-7 gen-infos">            
+          <h3 class="black">GENERAL INFORMATION</h3>
+            <p>I am currently looking for a UI/UX/Interaction Design internship position in California, Seattle, or Ann Arbor areas for the summer of 2017. Please check out my online design portfolio above. If you have any questions, please don't hesitate to contact me!</p>
+
+            <p>Email is the best way to reach me. Please only use phone contact for urgent inquiries. I am looking forward to connecting with you!</p> <br>
+        </div>
+      
+        <div class="col-md-4 col-md-offset-1">
+          <h3 class="black">CONTACT DETAILS</h3>
+            <ul class="contact-info">
+              <li class="phone glyphicon glyphicon-phone"> Phone: <a href="tel:7144224116">(714)422-4116</a></li>
+              <li class="mail glyphicon glyphicon-envelope"> Email: <a href="mailto:ryjchen@umich.edu">ryjchen@umich.edu</a></li>
+              <li class="linkedin glyphicon glyphicon-link"> Linkedin: <a href="https://www.linkedin.com/in/rebeccaychen">@rebeccaychen</a></li>
+              <li class="glyphicon glyphicon-file"> Resume: <a href="files/resume.pdf" target="_blank">view here</a></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12 copyright">
+          <span>COPYRIGHT &copy; 2016 REBECCA CHEN</span>
+        </div>
+        <div class="col-md-12 copyright">
+          <!-- Social Icons -->
+          <ul class="list-inline social-buttons">
+            <li>
+              <a href="https://www.linkedin.com/in/rebeccaychen" class="btn btn-social-icon btn-linkedin">
+                <span class="fa fa-linkedin"></span>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com/rebschen" class="btn btn-social-icon btn-facebook">
+                <span class="fa fa-facebook"></span>
+              </a>
+            </li>
+            <li>
+              <a href="https://twitter.com/ryjchen" class="btn btn-social-icon btn-twitter">
+                <span class="fa fa-twitter"></span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="js/lightbox.min.js"></script>
+<div id="easy-top"><span class="fa fa-arrow-up"></span></div>
+  <!-- Javascript and jQuery   -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>   
+</body>
+
+</html>
+

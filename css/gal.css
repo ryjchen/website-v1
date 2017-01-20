@@ -1,0 +1,17 @@
+.gallery {
+  /*max-width: 1300px;*/
+  width: 90%;
+  /*margin: 40px auto 0 auto;*/
+  margin: 40px 5% 40px 5%;
+  background-color: #FFF;
+  padding: 30px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.gal-photo {
+  width: 300px;
+  margin-bottom: 1%;
+}
