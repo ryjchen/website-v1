@@ -134,7 +134,6 @@ footer {
   font-size: 1.1em;
   margin-bottom: 2%;
 }
-
 /* --------------------------
   SVG Styles
 --------------------------- */
@@ -149,8 +148,34 @@ footer {
  100% {
     stroke-dashoffset: 0;
   } 
-} /*for my RYC svg*/
+} /*for RYC svg*/
 
+/* --------------------------
+  arrow
+--------------------------- */
+.arrow:hover .arrow-icon {
+  /*transform: scale(1.2) translateY(20px);*/
+  transform: translateY(50px);
+  transform-origin: 50% 50%;
+}
+
+.arrow-icon {
+  transition: transform .2s ease-out;
+  transform-origin: 50% 50%;
+}
+
+.arrow {
+  height: 40px;
+}
+
+/*.arrow:hover{
+  stroke-width: 10px;
+  fill: #3acec2;
+}
+
+.arrow-bg {
+  stroke: #fff;
+}*/
 /***************************************
  PAGE: PORTFOLIO 
 ****************************************/
@@ -337,9 +362,6 @@ footer {
     padding-top: 30px;
     padding-bottom: 5px;
   }
-/*  .about-container {
-    min-height: 900px;
-  }*/
   .gd-styles {
     margin-top: 50px;
     margin-bottom: 20px;
@@ -453,7 +475,7 @@ footer {
 
 
 #easy-top {
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(58, 206, 194, 0.75);
   text-align: center;
   position: fixed;
   bottom: 15px;
@@ -464,13 +486,14 @@ footer {
   line-height: 38px;
   border-radius: 4px;
   padding: 4px;
+  padding-right: 2%;
   display: none;
   -webkit-transform: translateZ(0);
   transition: all .3s ease-out;
 }
 
 #easy-top:hover {
-  background: rgba(0, 0, 0, 0.9);
+  background: rgba(58, 206, 194, 0.6);
 }
 
 #easy-top:before,
@@ -497,5 +520,5 @@ footer {
   left: 13px;
 }
 #easy-top:hover:after {
-  border-color: transparent transparent rgba(0, 0, 0, 0.9) transparent;
+  border-color: transparent transparent rgba(58, 206, 194, 0.6) transparent;
 }
