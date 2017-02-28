@@ -206,6 +206,7 @@ footer {
     margin: 0 48px;
     white-space: nowrap;
     padding-top: 0;
+    text-transform: uppercase;
   }
 
 /***************************************
@@ -368,6 +369,13 @@ footer {
   }
   .svg-logo {
     display: none;
+  }
+  .pics {
+    width: 60%;
+    max-width: 400px;
+    padding-bottom: 20px;
+    display: block;
+    margin: 0 auto;
   }
   .name {
     padding-top: 30px;
