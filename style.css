@@ -355,10 +355,13 @@ footer {
     display: none;
     font-weight: 100;
   }
+  .name {
+    display: none;
+  }
   .mobile {
     font-size: 1em;
     font-weight: 575;
-    padding-top: 4%;
+    padding-top: 6%;
     padding-bottom: 3%;
     color: white;
     text-decoration: none;
@@ -429,6 +432,9 @@ footer {
     padding-bottom: 20px;
     display: block;
     margin: 0 auto;
+  }
+  .contact-container {
+    padding-top: 80px;
   }
   .grow {
     transition: all .3s ease-in-out;
