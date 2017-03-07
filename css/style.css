@@ -29,10 +29,6 @@ h2 {
 h3 {
   padding-top: 25px;
 }
-h4 {
-  color: #3acec2 !important;
-  padding-top: 25px;
-}
 .black {
   color: #000 !important;
 }
@@ -283,7 +279,7 @@ footer {
     font-size: 1.5em;
   }
   .main-header {
-    margin-top: 15%;
+    margin-top: 45px;
   }
   .port-row {
     text-align: center;
