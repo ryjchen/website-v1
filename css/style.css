@@ -82,7 +82,7 @@ footer {
 .copyright {
   padding: 1% 0;
   font-weight: 100;
-  letter-spacing: .15em;
+  letter-spacing: .10em;
 }
 
 /* ---- Page Elements ---- */
@@ -143,7 +143,7 @@ footer {
 --------------------------- */
 .arrow:hover .arrow-icon {
   /*transform: scale(1.2) translateY(20px);*/
-  transform: translateY(50px);
+  transform: translateY(70px);
   transform-origin: 50% 50%;
 }
 .arrow-icon {
@@ -170,7 +170,7 @@ footer {
   align-items: center;
 }
 .port {
-  margin-bottom: 5%;
+  /*margin-bottom: 5%;*/
   margin-top: 5%;
 }
 .section-line {
@@ -200,6 +200,18 @@ footer {
 }
 
 /***************************************
+ PAGE: Skills
+****************************************/
+.skills{
+  padding-bottom: 10%;
+}
+.skills_icon {
+  width: 50%;
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 5%;
+}
+/***************************************
  PAGE: CONTACT
 ****************************************/
 .contact-info a {
@@ -214,12 +226,16 @@ footer {
   max-width: 100%;
   padding-bottom: 5px;
 }
-.contact-container {
+/*.contact-container {
   margin: 5% 10%;
   float: none;
-}
+}*/
 .gen-infos {
   line-height: 25px;
+}
+
+.contact {
+  padding: 5% 0;
 }
 
 /***************************************
