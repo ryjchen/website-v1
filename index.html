@@ -23,7 +23,8 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    padding: 8% 0;
+    padding-bottom: 8%;
+    padding-top: 22%;
     text-align: center;
     margin: 1% 0 1% 0;
     border-radius: 0px !important;
@@ -79,7 +80,7 @@
 <body data-spy="scroll" data-target=".navbar-fixed-top" data-offset="100">
   
   <!-- Header -->
-  <div id="home" class="container-fluid">
+  <!-- <div id="home" class="container-fluid">
     <header class="main-header"> 
       <div class="container header-container">
         <svg class="svg-logo" version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -95,7 +96,7 @@
         </svg>
          
         <h1 class="name">REBECCA Y. CHEN</h1>
-      </div>
+      </div> -->
 
     <!-- Navigation -->
     <nav id="mainNav" class="navbar navbar-default navbar-inverse navbar-custom navbar-fixed-top">
@@ -137,7 +138,7 @@
     </header>
 
     <!-- Jumbotron Home Page -->
-    <div class="row">
+    <div class="row" id="home">
       <div class="jumbotron jumbotron-fluid">
         <div class="container-fluid">
           <h2 class="jt-caption">UX / PRODUCT DESIGNER</h2> <br>
@@ -148,7 +149,7 @@
              viewBox="0 0 250 248" style="enable-background:new 0 0 250 248;" xml:space="preserve">
             <g class="arrow">
               <!-- <circle fill="#3acec2" class="arrow-bg" cx="125.6" cy="123.7" r="116.2"/> -->
-              <path class="arrow-icon" fill="#FFFFFF" d="M193.8,100.8c-4.6-4.7-9.3-9.3-13.9-14c-2.1-2.1-4.8-3.1-7.5-2.3c-2.2,0.7-4.4,2.1-6.1,3.8
+              <path class="arrow-icon" fill="#3acec2" d="M193.8,100.8c-4.6-4.7-9.3-9.3-13.9-14c-2.1-2.1-4.8-3.1-7.5-2.3c-2.2,0.7-4.4,2.1-6.1,3.8
               c-13.6,13.4-27,26.9-40.9,40.8c-1.1-1.2-2-2.2-2.9-3.2c-12.8-12.8-25.5-25.6-38.3-38.3c-4.5-4.5-9.1-4.5-13.6,0
               c-4.4,4.4-8.8,8.7-13.1,13.2c-3.7,3.9-3.7,8.7,0,12.4c20.6,20.7,41.3,41.3,62,62c3.8,3.8,8.7,3.8,12.4,0.1
               c20.7-20.6,41.3-41.3,62-62C197.5,109.4,197.5,104.7,193.8,100.8z"/>
@@ -169,7 +170,8 @@
   <!-- PORTFOLIO  -->
   <div id="portfolio" class="container-fluid">
     <div class="container port" style="padding-bottom: 50px;">
-      <h3 style="padding-bottom: 3%;" class="black">PORTFOLIO</h3>
+      <!-- <h3 style="padding-bottom: 3%; text-align: center;" class="black">PORTFOLIO</h3> -->
+      <h2 style="color: #000; text-align: center; line-spacing: .15em; font-weight: 200">PORTFOLIO</h2> <br>
       <div class="row port-row">
 
         <!-- 582 Interaction Design -->
@@ -255,11 +257,55 @@
       </div>
     </div>  
   </div>
+<!-- </div> -->
+
+<!-- add a thin line here -->
+
+<!-- SKILLS -->
+<div class="container skills">
+  <!-- <h3 style="padding-bottom: 3%; text-align: center;" class="black">SKILLS</h3> -->
+  <h2 style="color: #000; text-align: center; line-spacing: .15em; font-weight: 200">SKILLS</h2> <br>
+  <div class="col-sm-4">
+    <img class="skills_icon" src="img/photos/design.png" alt="">
+    <p style="text-align: center;">
+      Human Centered Design<br>
+      Interaction Design<br>
+      Wireframing<br>
+      Sketching<br>
+      Prototyping<br>
+      Visual Design
+    </p>
+  </div>
+  <div class="col-sm-4">
+    <img class="skills_icon" src="img/photos/research.png" alt="">
+    <p style="text-align: center;">
+      Contextual Inquiry<br>
+      Interviews<br>
+      Surveys<br>
+      Usability Testing<br>
+      Human Cognition
+    </p>
+  </div>
+  <div class="col-sm-4">
+    <img class="skills_icon" src="img/photos/software.png" alt="">
+    <p style="text-align: center;">
+      Sketch<br>
+      Illustrator<br>
+      Photoshop<br>
+      HTML/CSS<br>
+      Python
+    </p>
+  </div>
 </div>
 
 
 <!-- ABOUT ME -->
-  <div id="about" class="container-fluid" style="background-image: url(img/photos/chickenbutt.jpg);
+  <!-- <h1 style="text-align: center; color:#000; padding-bottom: 2%;">REBECCA Y. CHEN</h1> -->
+<div class="container-fluid" id="about">
+  <div class="row">
+    <h2 style="color: #000; text-align: center; line-spacing: .15em; font-weight: 200; padding-bottom: 2%;">REBECCA Y. CHEN</h2>
+  </div>
+  <div class="container-fluid" style="background-image: url(img/photos/chickenbutt.jpg);
   background-repeat: no-repeat;
   background-position-x: right;
   background-position-y: bottom;
@@ -269,35 +315,37 @@
     <div class="container about-container">
       <div class="row">
         <div class="col-sm-6 col-md-6 col-lg-7">
-          <h3 style="color: #3acec2;">ABOUT</h3>
-          <p style="color: #ddd;">Hi, I'm Rebecca from Fountain Valley, CA.</p> 
+          <h3 style="color: #3acec2; font-weight: 200;">ABOUT</h3>
+          <p style="color: #ccc;">Hi, I'm Rebecca from Fountain Valley, CA.</p> 
 
-          <p style="color: #ddd;">I am problem solver and am interested in all things technology.</p>
+          <p style="color: #ccc;">I am problem solver and am interested in all things technology.</p>
 
-          <p style="text-align: justify; color: #ddd">First and foremost, welcome to my <a href="#portfolio" class="internal" style="color:#3acec2;">design portfolio</a>! I am currently a Master of Information Science student studying Human-Computer Interaction at University of Michigan in Ann Arbor. I love going out to experience new things, meet people, and am constantly looking for more things to learn and aquire skills in.</p>
+          <p style="text-align: justify; color: #ccc">First and foremost, welcome to my <a href="#portfolio" class="internal" style="color:#3acec2;">design portfolio</a>! I am currently a Master of Information Science student studying Human-Computer Interaction at University of Michigan in Ann Arbor. I love going out to experience new things, meet people, and am constantly looking for more things to learn and aquire skills in.</p>
           
-          <p style="text-align: justify; color: #ddd">I am absolutely fascinated by the relationship between human and technology. During my time at UC Irvine, I completed an undergrad honors thesis on the perception of gravity in a rotating virtual environment and studied the effects of resulting cybersickness from the use of Oculus Rift. This experience really spurred my interest in pursing a career in UX / Product Design.</p><br>
+          <p style="text-align: justify; color: #ccc">I am absolutely fascinated by the relationship between human and technology. During my time at UC Irvine, I completed an undergrad honors thesis on the perception of gravity in a rotating virtual environment and studied the effects of resulting cybersickness from the use of Oculus Rift. This experience really spurred my interest in pursing a career in UX / Product Design.</p><br>
         </div>
 
         <div class="col-sm-3 col-md-6 col-lg-4">
-          <h3 style="color: #3acec2;">EDUCATION</h3>
-          <h5 style="color: #ddd;">UNIVERSITY OF MICHIGAN, ANN ARBOR</h5>
-          <p style="color: #ddd;">Master of Science in Information<br>Specializing in Human-Computer Interaction<br>2016-2018</p>
-          <h5 style="color: #ddd;">UNIVERSITY OF CALIFORNIA, IRVINE</h5>
-          <p style="color: #ddd;">Cognitive Sciences B.S. (Honors)<br>Specialized in Computation<br>Management Minor<br>2011-2015</p>
+          <h3 style="color: #3acec2; font-weight: 200;">EDUCATION</h3>
+          <h5 style="color: #ccc;">UNIVERSITY OF MICHIGAN, ANN ARBOR</h5>
+          <p style="color: #ccc;">Master of Science in Information<br>Specializing in Human-Computer Interaction<br>2016-2018</p>
+          <h5 style="color: #ccc;">UNIVERSITY OF CALIFORNIA, IRVINE</h5>
+          <p style="color: #ccc;">Cognitive Sciences B.S. (Honors)<br>Specialized in Computation<br>Management Minor<br>2011-2015</p>
           <!-- <img src="img/photos/chickenbutt.jpg" alt=""> -->
         </div>
       </div>
     </div>
   </div>
+</div>
 
 <!-- CONTACT ME -->
-<div id="contact" class="container-fluid">
+<!-- <div id="contact" class="container-fluid">
   <div class="container contact-container">
+    <h2 style="color: #000; text-align: center; line-spacing: .15em; font-weight: 200">CONTACT</h2>
       <div class="row" style="padding-bottom: 120px;">
         <div class="col-md-7 gen-infos">            
           <h3 class="black"></h3>
-            <p>I am currently looking for a UI/UX/Interaction Design internship position in California, Seattle, or Ann Arbor areas for the summer of 2017. Please check out my online design portfolio above. If you have any questions, please don't hesitate to contact me!</p>
+            <p>I am currently looking for a UX / Product Design internship position for the summer of 2017. Please check out my online design portfolio above. If you have any questions, please don't hesitate to contact me!</p>
 
             <p>Email is the best way to reach me. Please only use phone contact for urgent inquiries. I am looking forward to connecting with you!</p> <br>
         </div>
@@ -314,6 +362,29 @@
       </div>
 
     </div>
+  </div> -->
+
+  <div class="container contact" id="contact">
+    <div class="row">
+      <h2 style="color: #000; text-align: center; line-spacing: .15em; font-weight: 200">CONTACT</h2>
+    </div>
+    <div class="row">
+      <div class="col-md-7 gen-infos">            
+          <h3 class="black"></h3>
+            <p>I am currently looking for a UX / Product Design internship position for the summer of 2017. Please check out my online design portfolio above. If you have any questions, please don't hesitate to contact me!</p>
+
+            <p>Email is the best way to reach me. Please only use phone contact for urgent inquiries. I am looking forward to connecting with you!</p> <br>
+      </div>
+      <div class="col-md-4 col-md-offset-1">
+          <h3 class="black"></h3>
+            <ul class="contact-info">
+              <li class="phone glyphicon glyphicon-phone"> Phone: <a href="tel:7144224116">(714)422-4116</a></li>
+              <li class="mail glyphicon glyphicon-envelope"> Email: <a href="mailto:ryjchen@umich.edu">ryjchen@umich.edu</a></li>
+              <li class="linkedin glyphicon glyphicon-link"> Linkedin: <a href="https://www.linkedin.com/in/rebeccaychen">@rebeccaychen</a></li>
+              <li class="glyphicon glyphicon-file"> Resume: <a href="files/resume.pdf" target="_blank">view</a></li>
+          </ul>
+        </div>
+    </div>
   </div>
 
   <!-- FOOTER -->
@@ -321,7 +392,7 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-12 copyright">
-          <span>COPYRIGHT &copy; 2016 REBECCA CHEN</span>
+          <span>COPYRIGHT &copy; 2017 REBECCA CHEN</span>
         </div>
         <div class="col-md-12 copyright">
           <!-- Social Icons -->
