@@ -18,6 +18,23 @@
   body {
     position: relative;
   }
+  .jumbotron {
+    background: url('582hero.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 25%;
+    margin-bottom: 0;
+    text-align: center;
+    margin-top: 50px;
+    border-radius: 0px !important;
+  }
+  .jt-caption {
+    color: #0a165f;
+    display: inline-block;
+    font-size: 2em;
+    letter-spacing: .15em;
+  }
   .navbar-toggle {
     color: #3acec2;
     border-color: #3acec2 !important;
@@ -55,81 +72,79 @@
     background-color: #222;
     color: #3acec2;
   }
+  @media (max-width: 768px) {
+    .jt-caption {
+    font-size: 1.5em;
+    }
+  }
   </style>
 </head>
 
 <body data-spy="scroll" data-target=".navbar-fixed-top" data-offset="100">
-  
-  <!-- Header -->
-    <!-- Navigation -->
-    <nav id="mainNav" class="navbar navbar-default navbar-inverse navbar-custom navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header page-scroll">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-            <span class="sr-only">Toggle navigation</span> Menu <span class="fa fa-bars"></span>
-          </button>
+  <!-- Navigation -->
+  <nav id="mainNav" class="navbar navbar-default navbar-inverse navbar-custom navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header page-scroll">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span> Menu <span class="fa fa-bars"></span>
+        </button>
     
-          <a href="index.html" class="navbar-brand">
-            <img id="brand-img" src="img/ryc_logo.png" alt="">
-          </a>
-        </div>
+        <a href="index.html" class="navbar-brand">
+          <img id="brand-img" src="img/ryc_logo.png" alt="">
+        </a>
+      </div>
 
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right" style="margin-right: 1%;">
-                    <li class="hidden">
-                        <a href="#home"></a>
-                    </li>
-                    <li>
-                      <a href="index.html">HOME</a>
-                    </li>
-                    <li class="active">
-                      <a class="page-scroll" href="index.html#portfolio">PORTFOLIO</a>
-                    </li>
-                    <li>
-                      <a class="page-scroll" href="index.html#about">ABOUT</a>
-                    </li>
-                    <li>
-                      <a class="page-scroll" href="index.html#contact">CONTACT</a>
-                    </li>
-                    <li>
-                      <a href="files/resume.pdf">RESUME</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    </header>
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right" style="margin-right: 1%;">
+          <li class="hidden">
+            <a href="#home"></a>
+          </li>
+          <li>
+            <a href="index.html">HOME</a>
+          </li>
+          <li class="active">
+            <a class="page-scroll" href="index.html#portfolio">PORTFOLIO</a>
+          </li>
+          <li>
+            <a class="page-scroll" href="index.html#about">ABOUT</a>
+          </li>
+          <li>
+            <a class="page-scroll" href="index.html#contact">CONTACT</a>
+          </li>
+          <li>
+            <a href="files/resume.pdf">RESUME</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-
-<!-- main body -->
-<div class="container">
-  
-  <img src="img/photos/582.png" alt="Cooking App SI 582" class="project-photo"> 
-  <h2 style="padding-bottom: 45px;">An Incentivizing Cooking App</h2>
-  
-  <div class="row">
-    <div class="col-md-12 margin-top-lg margin-btm-md" style="display: flex; justify-content: center; align-items: center;">
-      <!-- <div class="section-line"></div> -->
-        <h3 class="center proj-header">OVERVIEW</h3>
-      <!-- <div class="section-line"></div> -->
+  <!-- main body -->
+  <!-- page title -->
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container-fluid">
+      <h2 class="jt-caption" style="padding-top: 2%;">AN INCENTIVIZING COOKING APP</h2> <br>
     </div>
   </div>
 
-  <div class="row">
-    <div class="col-md-3 col-md-offset-1 center">
+  <!-- overview info -->
+  <div class="col-md-12" style="background: #eee; margin-right: 0; padding-bottom: 20px;">
+    <h2>OVERVIEW</h2>
+    <div class="col-md-3 center">
       <video width="200" height="400" controls loop autoplay muted>
-          <source src="vid/582.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
+        <source src="vid/582.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
     </div>
-    <!-- <div class="col-md-6 col-md-offset-2 brief"> -->
-    <div class="col-md-5">
+
+    <div class="col-md-6">
       <h4>Problem Framing</h4>
       <p>Often, college is the first time young adults move away from the comfort of their home to being solely responsible for everything, from succeeding in commitments to living independently. It is already draining and stressful being a student, people often neglect the importance of eating a proper meal. Many who do not cook found cooking to be too expensive, too time consuming, or that they simply do not have the skill.</p>
+          
       <h4>Target Audience</h4>
       <p>Ann Arbor, MI. is a college town filled with predominantly students. My primary target audience is the Univeristy of Michigan students who do not have prior knowledge in cooking. My secondary target audience is the students who know the basics, but would like to find recipes that best suit their needs.</p>
     </div>
-    <!-- <div class="col-md-3 col-md-offset-0"> -->
+
     <div class="col-md-3">
       <h4>Type</h4>
       <p>Class Project</p>
@@ -142,152 +157,112 @@
     </div>
   </div>
 
-  <div class="row" style="margin-top: 5%; padding-bottom: 20px">
-    <div class="col-md-12 margin-top-lg margin-btm-md" style="display: flex; justify-content: center; align-items: center;">
-      <!-- <div class="section-line"></div> -->
-        <h3 class="center proj-header">PROCESS</h3>
-      <!-- <div class="section-line"></div> -->
-    </div>
+  <!-- process section -->
+  <div class="col-md-12" style="padding-top: 5%; padding-bottom: 3%;">
+    <h2>PROCESS</h2>
+    <img src="img/photos/process582.png" alt="Project Design Process" class="project-img">
   </div>
-  <img src="img/photos/582process.png" alt="Project Design Process" class="project-img">
 
-    <div class="row" style="margin-top: 10%; padding-bottom: 20px">
-      <div class="col-md-12 margin-top-lg margin-btm-md" style="display: flex; justify-content: center; align-items: center;">
-        <!-- <div class="section-line"></div> -->
-          <h3 class="center proj-header">User Research</h3>
-        <!-- <div class="section-line"></div> -->
+  <!-- user research section -->
+  <div class="col-md-12" style="padding-bottom: 20px; padding-top: 5%; background: #eee;">
+    <h2>USER RESEARCH</h2>
+    <p style="text-align: center; padding-bottom: 40px;">Current solutions target incorrect audience, has too narrow of focus, and often face limited resrouces.</p>
+    <!-- comp analysis 1 -->
+    <div class="col-md-12" style="background: #daeae8; padding-bottom: 2%;">
+      <h4 class="center" style="padding-top: 50px;">Competitive Analysis</h4>
+      <a href="img/photos/epi.png" data-lightbox="582" data-title="Competitor: Epicurious"><img src="img/photos/epi.png" alt="Competitor: Epicurious" class="col-md-4 pics" style="width:200px;"></a>
+      <div class="col-md-8" style="margin-top: 6%;">
+        <p><b>Name:</b> Epicurious Recipes &amp; Food Videos</p>
+        <p><b>Type:</b> app</p>
+        <p><b>Strengths:</b> detailed instructions, specific ingredients list, wide range of recipes, intuitive and beautifully designed UI</p>
+        <p><b>Weaknesses:</b> not beginner friendly, limited functionality (recipes and shopping list)</p>
+      </div>
+    </div>
+
+    <!-- comp analysis 2 -->
+    <div class="col-md-12" style="padding-bottom: 20px; padding-top: 3%;">
+      <a href="img/photos/allrecipes.png" data-lightbox="582" data-title="Competitor: Allrecipes"><img src="img/photos/allrecipes.png" alt="Competitor: Allrecipes" class="col-md-4 pics" style="width:200px;"></a>
+      <div class="col-md-8" style="margin-top: 6%;">
+        <p><b>Name:</b> Allrecipes Dinner Spinner</p>
+        <p><b>Type:</b> app</p>
+        <p><b>Strengths:</b> online community to engage users, organized collection of favorite recipes, fun "Dinner Spinner" functionality</p>
+        <p><b>Weaknesses:</b> Hard to find recipes based on time and skill level, "Dinner Spinner" often results with 0 recipes, limited functionality (recipes and shopping list), user generated content results in unprofessional pictures</p>
       </div>
     </div>
   
-  <div class="row">
-    <div class="col-md-6 col-md-offset-3 brief">
-      <h4 class="center">Competitive Analysis</h4>
-      <p class="center" style="text-align: left; padding-bottom: 40px;">Current solutions target incorrect audience, has too narrow of focus, and often face limited resrouces.</p>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-md-3 col-md-offset-2">
-      <a href="img/photos/epi.png" data-lightbox="582" data-title="Competitor: Epicurious"><img src="img/photos/epi.png" alt="Competitor: Epicurious" class="pics"></a>
-    </div>
-    <div class="col-md-5">
-      <p><b>Name:</b> Epicurious Recipes &amp; Food Videos</p>
-      <p><b>Type:</b> app</p>
-      <p><b>Strengths:</b> detailed instructions, specific ingredients list, wide range of recipes, intuitive and beautifully designed UI</p>
-      <p><b>Weaknesses:</b> not beginner friendly, limited functionality (recipes and shopping list)</p>
+    <!-- interviews -->
+    <div class="col-md-12" style="padding-bottom: 20px; background: #daeae8;">
+      <h4 class="center" style="padding-top: 50px;">User Interviews</h4>
+      <p style="text-align: center;"><b>User Requirements: </b>portability, ease of use, personalization of recipe search, and immediate gratification.</p>
     </div>
   </div>
 
-  <div class="row">
-    <div class="col-md-3 col-md-offset-2">
-      <a href="img/photos/allrecipes.png" data-lightbox="582" data-title="Competitor: Allrecipes"><img src="img/photos/allrecipes.png" alt="Competitor: Allrecipes" class="pics"></a>
-    </div>
-    <div class="col-md-5">
-      <p><b>Name:</b> Allrecipes Dinner Spinner</p>
-      <p><b>Type:</b> app</p>
-      <p><b>Strengths:</b> online community to engage users, organized collection of favorite recipes, fun "Dinner Spinner" functionality</p>
-      <p><b>Weaknesses:</b> Hard to find recipes based on time and skill level, "Dinner Spinner" often results with 0 recipes, limited functionality (recipes and shopping list), user generated content results in unprofessional pictures</p>
-    </div>
-  </div>
-  
-  <div class="row">
-    <div class="col-md-6 col-md-offset-3 brief">
-      <h4 class="center">User Interviews</h4>
-      <p class="center" style="text-align: left; padding-bottom: 40px;"><b>User Requirements: </b>portability, ease of use, personalization of recipe search, and immediate gratification.</p>
-    </div>
+<div class="col-md-12" style="padding-bottom: 50px; padding-top: 5%;">
+  <div class="col-md-12">
+    <h2>IDEATION</h2>
+    <h4 class="center">Design Philosophy</h4>
+    <p style="text-align: center;">"A technological infrastructure that is straightforward and provides an outlet for students to learn the basics of cooking and to live a healthier life."</p>
   </div>
 
-    <div class="row" style="margin-top: 10%; padding-bottom: 20px">
-      <div class="col-md-12 margin-top-lg margin-btm-md" style="display: flex; justify-content: center; align-items: center;">
-        <!-- <div class="section-line"></div> -->
-          <h3 class="center proj-header">Ideation</h3>
-        <!-- <div class="section-line"></div> -->
-      </div>
-    </div>
-  
-  <div class="row">
-    <div class="col-md-6 col-md-offset-3 brief">
-      <h4 class="center">Design Philosophy</h4>
-      <p class="center" style="text-align: left;">"A technological infrastructure that is straightforward and provides an outlet for students to learn the basics of cooking and to live a healthier life."</p>
-    </div>
-  </div>
-
-    <div class="col-md-6 col-md-offset-3 brief" style="padding-bottom: 20px;">
-      <h4 class="center">High Level Overview</h4>
-      <p class="center" style="text-align: left;">User follows step-by-step instructions to self-selected recipes. The more the user cooks and shares, the more points he or she earns toward redeeming coupons to grocery stores around Ann Arbor.</p>
+    <div class="col-md-12" style="padding-bottom: 20px; background: #daeae8;">
+      <h4 class="center" style="padding-top: 50px;">High-Level Overview</h4>
+      <a href="img/photos/ideation1.jpg" data-lightbox="582" data-title="Solution Ideation"><img src="img/photos/ideation1.jpg" alt="Solution Ideation" class="pics col-md-4"></a>
+      <p class="col-md-8 center" style="text-align: left; margin-top: 8%;">User follows step-by-step instructions to self-selected recipes. The more the user cooks and shares, the more points he or she earns toward redeeming coupons to grocery stores around Ann Arbor.</p>
     </div>
 
-    <a href="img/photos/ideation1.jpg" data-lightbox="582" data-title="Solution Ideation"><img src="img/photos/ideation1.jpg" alt="Solution Ideation" class="pics"></a>
-
-    <h4 class="center">Solution Sketches</h4>
-    <div class="col-md-6 col-md-offset-3 brief" style="padding-bottom: 20px;">
-      <p>Brainstormed possible solutions to my design problem. The ideas were drawn from exisiting products and with the intent of having more diversity than the same solution with slightly different approaches.</p>
-    </div>
-    <a href="img/photos/sketching.jpg" data-lightbox="582" data-title="Eight Solution Sketches"><img src="img/photos/sketching.jpg" alt="Eight Solution Sketches" class="pics"></a>
-
-  <div class="row center">
-    <h4>Storyboarding</h4>
-    <div class="col-md-6 col-md-offset-3 brief" style="text-align: left">
-      <p>From the solution sketches, I sketched out 5 worksflows to convey how the solution is used to approach my design problem.</p>
-    </div>
-  </div>
-
-    <div class="center">
-      <a href="img/photos/storyboard1.jpg" data-lightbox="582" data-title="Storyboarding Part I"><img src="img/photos/storyboard1.jpg" alt="Storyboarding Part I" class="project-pic"></a>
-      <a href="img/photos/storyboard2.jpg" data-lightbox="582" data-title="Storyboarding Part II"><img src="img/photos/storyboard2.jpg" alt="Storyboarding Part II" class="project-pic"></a>
+    <div class="col-md-12" style="padding-bottom: 20px; margin-top: 50px;">
+      <h4 class="center">Solution Sketches</h4>
+      <a href="img/photos/sketching.jpg" data-lightbox="582" data-title="Eight Solution Sketches"><img src="img/photos/sketching.jpg" alt="Eight Solution Sketches" class="pics col-md-4"></a>
+      <p class="col-md-8 center" style="margin-top: 6%;">Brainstormed possible solutions to my design problem. The ideas were drawn from exisiting products and with the intent of having more diversity than the same solution with slightly different approaches.</p>
     </div>
     
-  <div class="row center">
-    <h4 class="center">Personas</h4>
-    <div class="col-md-6 col-md-offset-3 brief" style="text-align: left">
-      <p>Developed personas for my target users. The intent was to diversity the characteristics amongst the personas to illustrate a wide range of user needs, motivations, skill levels, etc.</p>
+
+    <div class="col-md-12" style="padding-bottom: 20px; background: #daeae8;">
+      <h4 class="center" style="padding-top: 50px;">Storyboarding</h4>
+      <a href="img/photos/storyboard1.jpg" data-lightbox="582" data-title="Storyboarding Part I"><img src="img/photos/storyboard1.jpg" alt="Storyboarding Part I" class="pics col-md-4"></a>
+      <a href="img/photos/storyboard2.jpg" data-lightbox="582" data-title="Storyboarding Part II"><img src="img/photos/storyboard2.jpg" alt="Storyboarding Part II" class="pics col-md-4"></a>
+      <p class="col-md-4" style="margin-top: 6%;">From the solution sketches, I sketched out 5 worksflows to convey how the solution is used to approach my design problem.</p>
     </div>
-  </div>
-  
-  <div class="center">
-      <a href="img/photos/582persona1.png" data-lightbox="582" data-title="Target Persona #1"><img src="img/photos/582persona1.png" alt="Target Persona #1" class="project-pic"></a>
-
-      <a href="img/photos/582persona2.png" data-lightbox="582" data-title="Target Persona #2"><img src="img/photos/582persona2.png" alt="Target Persona #2" class="project-pic"></a>
-
-      <a href="img/photos/582persona3.png" data-lightbox="582" data-title="Target Persona #3"><img src="img/photos/582persona3.png" alt="Target Persona #3" class="project-pic"></a>
-  </div>
-
-    <div class="row" style="margin-top: 10%; padding-bottom: 30px">
-      <div class="col-md-12 margin-top-lg margin-btm-md" style="display: flex; justify-content: center; align-items: center;">
-        <!-- <div class="section-line"></div> -->
-          <h3 class="center proj-header">Design</h3>
-        <!-- <div class="section-line"></div> -->
+    
+    <div class="col-md-12" style="padding-bottom: 20px;">
+      <h4 class="center" style="padding-top: 50px;">Personas</h4>
+      <div class="col-md-4">
+        <a href="img/photos/582persona1.png" data-lightbox="582" data-title="Target Persona #1"><img src="img/photos/582persona1.png" alt="Target Persona #1" class=""></a>
       </div>
+      <div class="col-md-4">
+        <a href="img/photos/582persona2.png" data-lightbox="582" data-title="Target Persona #2"><img src="img/photos/582persona2.png" alt="Target Persona #2" class=""></a>
+      </div>
+      <div class="col-md-4">
+        <a href="img/photos/582persona3.png" data-lightbox="582" data-title="Target Persona #3"><img src="img/photos/582persona3.png" alt="Target Persona #3" class=""></a>
+      </div>
+      <p class="col-md-12 center" style="padding-top: 3%;">Developed personas for my target users. The intent was to diversity the characteristics amongst the personas to illustrate a wide range of user needs, motivations, skill levels, etc.</p>
     </div>
+</div> 
+
+<div class="col-md-12" style="background: #eee; padding-bottom: 50px; padding-top: 5%;">
+  <h2>DESIGN</h2>
+  <div class="col-md-12" style="padding-bottom: 5%;">
     <h4 class="center">Paper Prototype</h4>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6 col-md-offset-3 brief" style="text-align: left; padding-bottom: 20px;">
-          <p>Used low cost materials to quickly assemble a low-fidelity mock up of my final design solution, a mobile app. The goal of this paper prototype is to illustrate user flows and interactions and be able to justify my design decisions.</p>
-        </div>
-      </div>
-    
-
-    <div class="col-sm-6 col-sm-offset-3">
+    <div class="col-md-4">
       <div class="embed-responsive embed-responsive-16by9">
-        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/D9AhyZTmRmo"></iframe>
+          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/D9AhyZTmRmo"></iframe>
       </div>
-      <br>
+    </div>
+    <div class="col-md-8" style="padding-top: 70px;">
+      <p>Used low cost materials to quickly assemble a low-fidelity mock up of my final design solution, a mobile app. The goal of this paper prototype is to illustrate user flows and interactions and be able to justify my design decisions.</p>
     </div>
   </div>
-
-  <div class="row">
+  <div class="col-md-12">
     <h4 class="center">Digital Prototype</h4>
-    <div class="col-md-6 col-md-offset-3 brief" style="text-align: left; padding-bottom: 20px;">
-      <p>Based on the feedback of user testing on the low-fidelity paper prototype, changes were made and translated into a high-fidelity digital prototype. The digital prototype has much more interactions designed and implemented. Try out the app <a href="https://xd.adobe.com/view/9ecbca1f-629d-4bfb-8f1f-6d6119742d9d/screen/2b25591e-0063-4e19-b6ba-bab1b047afca/Log-In" class="internal">HERE</a></p>
-    </div>
-    <a href="img/photos/digital.png" data-lightbox="582" data-title="Digital Prototype of HoMe Cooking mobile app"><img src="img/photos/digital.png" alt="Digital PrototypeI" class="pics"></a>
-    <div>
-      <br>
-      <p style="padding-bottom: 30px;"></p>
-    </div>
+    <a href="img/photos/digital.png" data-lightbox="582" data-title="Digital Prototype of HoMe Cooking mobile app"><img src="img/photos/digital.png" alt="Digital PrototypeI" class="col-md-4"></a>
+    <p style="padding-top: 8%; padding-down: 5%;">Based on the feedback of user testing on the low-fidelity paper prototype, changes were made and translated into a high-fidelity digital prototype. The digital prototype has much more interactions designed and implemented. Try out the app <a href="https://xd.adobe.com/view/9ecbca1f-629d-4bfb-8f1f-6d6119742d9d/screen/2b25591e-0063-4e19-b6ba-bab1b047afca/Log-In" class="internal">HERE</a></p>
   </div>
-
 </div>
+
+
+  
+    <div class="container">
+    </div>
 
 
    <!-- FOOTER -->
@@ -309,22 +284,24 @@
                 <span class="fa fa-facebook"></span>
               </a>
             </li>
-            <li>
+            <!-- <li>
               <a href="https://twitter.com/rebeccaychen" class="btn btn-social-icon btn-twitter">
                 <span class="fa fa-twitter"></span>
               </a>
-            </li>
+            </li> -->
           </ul>
         </div>
       </div>
     </div>
   </footer>
   <script src="js/lightbox.min.js"></script>
-<div id="easy-top"><span class="fa fa-arrow-up"></span></div>
+  <div id="easy-top"><span class="fa fa-arrow-up"></span></div>
+
     <!-- Javascript and jQuery   -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/lightbox-plus-jquery.min.js"></script>  
   <script src="js/main.js"></script> 
+
 </body>
 </html>
