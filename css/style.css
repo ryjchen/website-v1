@@ -127,6 +127,7 @@ footer {
   font-size: 1.1em;
   margin-bottom: 2%;
 }
+
 /* --------------------------
   SVG Styles
 --------------------------- */
@@ -175,20 +176,14 @@ footer {
   align-items: center;
 }
 .port {
-  /*margin-bottom: 5%;*/
   margin-top: 5%;
 }
-/*.section-line {
-    height: 3px;
-    width: 250px;
-    background-color: #3acec2;
-  }*/
-  .proj-header {
-    margin: 0 48px;
-    white-space: nowrap;
-    padding-top: 0;
-    text-transform: uppercase;
-  }
+.proj-header {
+  margin: 0 48px;
+  white-space: nowrap;
+  padding-top: 0;
+  text-transform: uppercase;
+}
 
 /***************************************
  PAGE: ABOUT
@@ -221,6 +216,7 @@ footer {
 ****************************************/
 .contact-info a {
   color: black;
+  font-family: 'Varela Round', sans-serif;
 }
 .contact-info {
   padding-left: 0;
@@ -231,20 +227,15 @@ footer {
   max-width: 100%;
   padding-bottom: 5px;
 }
-/*.contact-container {
-  margin: 5% 10%;
-  float: none;
-}*/
 .gen-infos {
   line-height: 25px;
 }
-
 .contact {
   padding: 5% 0;
 }
 
 /***************************************
- PAGE: CONTACT
+ PAGE: GD
 ****************************************/
 .gd-styles {
   padding: 0 20px;
@@ -361,18 +352,12 @@ footer {
   }
 }
 
-/*@media (min-width: 768px) {
-  .photo {
-    height: 222px;
-  }
-}
-*/
-
 @media (min-width: 990px) and (max-width: 1200px) {
   .photo {
     height: 200px;
   }
 }
+
 /***************************************
  Mobile Screen
 ****************************************/
@@ -417,7 +402,6 @@ footer {
     transform: scale(2.5);
   }
   .gallery {
-/*    width: 1000px;*/
     margin: 0 auto;
   }
 
@@ -444,7 +428,7 @@ footer {
     -webkit-animation: offset 2s linear forwards; 
   }
 
-  /* ================================= 
+/* ================================= 
   Photo Overlay Transitions
 ==================================== */
 .photo-overlay {
