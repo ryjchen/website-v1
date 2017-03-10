@@ -20,6 +20,23 @@
   body {
     position: relative;
   }
+  .jumbotron {
+    background: url('501hero.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 25%;
+    margin-bottom: 0;
+    text-align: center;
+    margin-top: 50px;
+    border-radius: 0px !important;
+  }
+  .jt-caption {
+    color: #0a165f;
+    display: inline-block;
+    font-size: 2em;
+    letter-spacing: .15em;
+  }
   .navbar-toggle {
     color: #3acec2;
     border-color: #3acec2 !important;
@@ -60,9 +77,9 @@
   h4, h3 {
     margin-top: 30px;
   }
-/*  .table-responsive {
-    overflow-x: auto;
-  }*/
+  .table-striped > tbody > tr:nth-child(2n+1) > td, .table-striped > tbody > tr:nth-child(2n+1) > th {
+   background-color: #daeae8;
+  }
   </style>
 </head>
 
@@ -108,21 +125,16 @@
   </header>
 
 <!-- main body -->
-<div class="container">
-  
-  <img src="img/photos/501.png" alt="Cooking App SI 582" class="project-photo"> 
-  <h2 style="padding-bottom: 45px;">Underutilized Space Consult</h2>
-  
-  <div class="row">
-    <div class="col-md-12 margin-top-lg margin-btm-md" style="display: flex; justify-content: center; align-items: center;">
-      <!-- <div class="section-line"></div> -->
-        <h3 class="center proj-header">Overview</h3>
-      <!-- <div class="section-line"></div> -->
+<div class="jumbotron jumbotron-fluid">
+    <div class="container-fluid">
+      <h2 class="jt-caption" style="padding-top: 2%;">UNDERUTILIZED SPACE CONSULTATION</h2> <br>
     </div>
   </div>
 
-  <div class="row">
-    <div class="col-md-6 col-md-offset-2 brief">
+  <!-- overview info -->
+  <div class="col-md-12" style="background: #eee; margin-right: 0; padding-bottom: 20px;">
+    <h2>OVERVIEW</h2>
+    <div class="col-md-7 col-md-offset-1">
       <h4>Client</h4>
       <p>A software consulting-based company that utilizes the intersection of strategy, marketing, technology, and innovation to “build the software today for inventions of tomorrow.”</p>
 
@@ -135,7 +147,7 @@
       <p>We conducted interviews and observed the office's flow over the course of the consult in order to identify problems in maximizing space usage that our client faces due to the nature of a consulting.</p>
     </div>
 
-    <div class="col-md-3 col-md-offset-0">
+    <div class="col-md-4">
       <h4>Type</h4>
       <p>Class Project</p>
       <p>Contextual Inquiry Consulting</p>
@@ -147,73 +159,59 @@
     </div>
   </div>
 
-  <div class="row" style="margin-top: 10%; padding-bottom: 40px">
-    <div class="col-md-12 margin-top-lg margin-btm-md" style="display: flex; justify-content: center; align-items: center;">
-      <!-- <div class="section-line"></div> -->
-        <h3 class="center proj-header">Process</h3>
-      <!-- <div class="section-line"></div> -->
-    </div>
+  <!-- process section -->
+  <div class="col-md-12" style="padding-top: 5%; padding-bottom: 3%;">
+    <h2>PROCESS</h2>
+    <img src="img/photos/process501.png" alt="Project Design Process" class="project-img">
   </div>
-  <img src="img/photos/501process.png" alt="Project Design Process" class="project-img">
-
 
   <!-- insights section -->
-  <div class="row" style="margin-top: 10%; padding-bottom: 15px">
-    <div class="col-md-12 margin-top-lg margin-btm-md" style="display: flex; justify-content: center; align-items: center;">
-      <!-- <div class="section-line"></div> -->
-        <h3 class="center proj-header">Insights</h3>
-      <!-- <div class="section-line"></div> -->
-    </div>
-  </div> <!-- end of insights section -->
-
-  <!-- affinity wall section -->
-  <div class="row">
-    <div class="col-md-6 col-md-offset-3 brief">
-      <h3 class="center">Affinity Wall</h3>
-        <p class="center">- 7 Interviews (interviewees' roles ranged from management to software development)</p>
-        <p class="center">- Roughly 300 affinity notes</p>
-    </div>
+  <div class="col-md-12" style="background: #eee; padding-bottom: 3%;">
+    <h2>INSIGHTS</h2>
+    <!-- affinity wall section -->
+    <h3 class="center">Affinity Wall</h3>
+    <p class="center">Interviewed 7 stakeholders with roles ranging from management to software development and created about 300 affinity notes from interviews and observations.</p>
     <div class="center">
-        <video width="320" height="200" controls muted>
-          <source src="vid/affinity1.mp4" type="video/mp4">
+      <video width="320" height="200" controls muted>
+        <source src="vid/affinity1.mp4" type="video/mp4">
           Your browser does not support the video tag.
-        </video>
-        <video width="320" height="200" controls muted>
-          <source src="vid/affinity2.mp4" type="video/mp4">
+      </video>
+      <video width="320" height="200" controls muted>
+        <source src="vid/affinity2.mp4" type="video/mp4">
           Your browser does not support the video tag.
-        </video>
-        <video width="320" height="200" controls muted>
-          <source src="vid/affinity3.mp4" type="video/mp4">
+      </video>
+      <video width="320" height="200" controls muted>
+        <source src="vid/affinity3.mp4" type="video/mp4">
           Your browser does not support the video tag.
-        </video>
-      </div>
-    </div> <!-- end of affinity wall section -->
-    
+      </video>
+    </div>
+  </div>
 
   <!-- findings section -->
-  <div class="row" style="margin-top: 10%; padding-bottom: 40px">
-    <div class="col-md-12 margin-top-lg margin-btm-md" style="display: flex; justify-content: center; align-items: center;">
-      <!-- <div class="section-line"></div> -->
-        <h3 class="center proj-header">Findings</h3>
-      <!-- <div class="section-line"></div> -->
+  <div class="col-md-12">
+    <h2>FINDINGS</h2>
+    <div class="col-md-12">
+      <div class="col-md-10 col-md-offset-1">
+        <p>In addition to concerns about the makerspace, our consulting team discovered that many of the concerns and issues raised explicitly by employees and unearthed by multiple interviews revolved around restricted communication lines between employees and management.</p>
+      </div>
     </div>
-  </div> <!-- end of findings section -->
-
-  <div class="row">
-    <div class="col-md-6 col-md-offset-3 brief">
-      <p>In addition to concerns about the makerspace, our consulting team discovered that many of the concerns and issues raised explicitly by employees and unearthed by multiple interviews revolved around restricted communication lines between employees and management.</p>
-
+    <div class="col-md-12">
       <h4 class="center">Findings Related to Restricted Communication Flow</h4>
-      <p>Our consulting team identified some areas of concern regarding communication between employees early in the project. From the initial meeting through the interviews, each employee we talked to was excited to talk about the culture of the company, which is hugely important to its success. Although the organizational structure is ostensibly flat, we found evidence in our interviews that employees have stratified themselves to a point that specific bottlenecks have formed.</p>
-      <p>Although the makerspace was the initial focus of the project, the consulting team found that several of the roadblocks to moving on the foundation of a makerspace, as well as issues with other concerns our client raised at the outset of the project, could probably be resolved by tackling the communication restrictions.</p>
-
-      <h4 class="center">Findings Related to Makerspace</h4>
-      <p>The employees who participated in the interviews for this project are excited about the makerspace idea, and many had unique ideas of what the makerspace could look like. The consulting team felt it was critical to evaluate what employees hoped the space will look like and what they hope to do with it. In the two years since the idea of founding a makerspace in The Forge originated, there are a few factors which have consistently kept Pillar from realizing the makerspace. The consulting team feels it is important that Pillar identify and address these long-standing issues before forging ahead with the makerspace.</p>
+      <div class="col-md-10 col-md-offset-1">
+        <p>Our consulting team identified some areas of concern regarding communication between employees early in the project. From the initial meeting through the interviews, each employee we talked to was excited to talk about the culture of the company, which is hugely important to its success. Although the organizational structure is ostensibly flat, we found evidence in our interviews that employees have stratified themselves to a point that specific bottlenecks have formed.</p>
+        <p>Although the makerspace was the initial focus of the project, the consulting team found that several of the roadblocks to moving on the foundation of a makerspace, as well as issues with other concerns our client raised at the outset of the project, could probably be resolved by tackling the communication restrictions.</p>
+      </div>
+    </div>
+    <div class="col-md-12" style="padding-bottom: 5%;">
+      <div class="col-md-10 col-md-offset-1">
+        <h4 class="center">Findings Related to Makerspace</h4>
+        <p>The employees who participated in the interviews for this project are excited about the makerspace idea, and many had unique ideas of what the makerspace could look like. The consulting team felt it was critical to evaluate what employees hoped the space will look like and what they hope to do with it. In the two years since the idea of founding a makerspace in The Forge originated, there are a few factors which have consistently kept Pillar from realizing the makerspace. The consulting team feels it is important that Pillar identify and address these long-standing issues before forging ahead with the makerspace.</p>
+      </div>
     </div>
   </div>
 
   <!-- add a findings table -->
-  <div class="container" style="padding-top: 40px;">
+  <div class="container" style="padding-top: 40px; padding-bottom: 5%;">
     <div class="table-responsive" style="padding: 0 10%">
       <table class="table table-striped">
         <thead>
@@ -265,12 +263,8 @@
   </div>
 
   <!-- recommendation section -->
-  <div class="row" style="margin-top: 10%; padding-bottom: 40px">
-    <div class="col-md-12 margin-top-lg margin-btm-md" style="display: flex; justify-content: center; align-items: center;">
-      <!-- <div class="section-line"></div> -->
-        <h3 class="center proj-header">Recommendations</h3>
-      <!-- <div class="section-line"></div> -->
-    </div>
+  <div class="col-md-12" style="background: #eee;">
+    <h2>RECOMMENDATIONS</h2>
   
   <!-- add a recommendations table -->
   <div class="container">
@@ -327,7 +321,8 @@
       </table>
     </div>
   </div>
-
+  </div>
+  
   </div>
 </div>
 
