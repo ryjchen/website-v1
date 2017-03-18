@@ -16,11 +16,14 @@
   <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon"/>
 
   <style>
+  h4 {
+    font-size: 1.5em;
+  }
   body {
     position: relative;
   }
   .jumbotron {
-    background: url('582hero.png');
+    background: url('582hero.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -129,8 +132,8 @@
   </div>
 
   <!-- overview info -->
-  <div class="col-md-12" style="background: #eee; margin-right: 0; padding-bottom: 20px;">
-    <h2>OVERVIEW</h2>
+  <div class="col-md-12" style="background: #eee; margin-right: 0; padding-bottom: 5%;">
+    <h2 style="padding-bottom: 3%;">OVERVIEW</h2>
     <div class="col-md-3 center">
       <video width="200" height="400" controls loop autoplay muted>
         <source src="vid/582.mp4" type="video/mp4">
@@ -138,25 +141,30 @@
       </video>
     </div>
 
-    <div class="col-md-6">
+    <div class="col-md-6 col-lg-5">
       <h4>Problem Framing</h4>
       <p>Often, college is the first time young adults move away from the comfort of their home to being solely responsible for everything, from succeeding in commitments to living independently. It is already draining and stressful being a student, people often neglect the importance of eating a proper meal. Many who do not cook found cooking to be too expensive, too time consuming, or that they simply do not have the skill.</p>
           
-      <h4>Target Audience</h4>
-      <p>Ann Arbor, MI. is a college town filled with predominantly students. My primary target audience is the Univeristy of Michigan students who do not have prior knowledge in cooking. My secondary target audience is the students who know the basics, but would like to find recipes that best suit their needs.</p>
+      <h4 style="padding-top: 5%;">Target Audience</h4>
+      <p style=" padding-bottom: 5%;">Ann Arbor, MI. is a college town filled with predominantly students. My primary target audience is the Univeristy of Michigan students who do not have prior knowledge in cooking. My secondary target audience is the students who know the basics, but would like to find recipes that best suit their needs.</p>
     </div>
 
-    <div class="col-md-3">
+    <div class="col-md-2 col-md-offset-1">
       <h4>Type</h4>
       <p>Individual Class Project</p>
       <p>Interaction Design</p>
-      <h4>Role(s)</h4>
+      <h4 style="padding-top: 4%;">Role(s)</h4>
       <p>UX Researcher</p>
       <p>Interaction Designer</p>
-      <h4>Duration</h4>
+      <h4 style="padding-top: 4%;">Duration</h4>
       <p>August 2016-December 2016</p>
     </div>
   </div>
+
+  <!-- needs statement -->
+    <div class="col-md-10 col-md-offset-1" style="margin-top: 5%; padding-top: 2%; background: #daeae8;">
+      <p style="font-size: 1.75em; font-style: italic; padding-bottom: 5%; padding-top: 3%;" class="center">"As a student, I need an affordable and reliable source of food so that I can survive the long hours of school, extracurricular, and social activities."</p>
+    </div>
 
   <!-- process section -->
   <div class="col-md-12" style="padding-top: 5%; padding-bottom: 5%;">
@@ -169,10 +177,10 @@
     <h2>USER RESEARCH</h2>
     <p style="text-align: center; padding-bottom: 40px;">Current solutions target incorrect audiences, have too narrow of focus, and often face limited resrouces.</p>
     <!-- comp analysis 1 -->
-    <div class="col-md-12" style="background: #daeae8; padding-bottom: 2%;">
+    <div class="col-md-10 col-md-offset-1" style=" padding-bottom: 2%;">
       <h4 class="center" style="padding-top: 50px;">Competitive Analysis</h4>
       <a href="img/photos/epi.jpg" data-lightbox="582" data-title="Competitor: Epicurious"><img src="img/photos/epi.jpg" alt="Competitor: Epicurious" class="col-md-4 pics" style="width:200px;"></a>
-      <div class="col-md-8" style="margin-top: 6%;">
+      <div class="col-md-7 col-md-offset-1" style="margin-top: 6%;">
         <p><b>Name:</b> Epicurious Recipes &amp; Food Videos</p>
         <p><b>Type:</b> app</p>
         <p><b>Strengths:</b> detailed instructions, specific ingredients list, wide range of recipes, intuitive and beautifully designed UI</p>
@@ -182,8 +190,8 @@
 
     <!-- comp analysis 2 -->
     <div class="col-md-12" style="padding-bottom: 20px; padding-top: 3%;">
-      <a href="img/photos/allrecipes.png" data-lightbox="582" data-title="Competitor: Allrecipes"><img src="img/photos/allrecipes.png" alt="Competitor: Allrecipes" class="col-md-4 pics" style="width:200px;"></a>
-      <div class="col-md-8" style="margin-top: 6%;">
+      <a href="img/photos/allrecipes.png" data-lightbox="582" data-title="Competitor: Allrecipes"><img src="img/photos/allrecipes.png" alt="Competitor: Allrecipes" class="col-md-4 col-md-offset-1 pics" style="width:200px;"></a>
+      <div class="col-md-7 col-md-offset-1" style="margin-top: 6%;">
         <p><b>Name:</b> Allrecipes Dinner Spinner</p>
         <p><b>Type:</b> app</p>
         <p><b>Strengths:</b> online community to engage users, organized collection of favorite recipes, fun "Dinner Spinner" functionality</p>
@@ -192,7 +200,7 @@
     </div>
   
     <!-- interviews -->
-    <div class="col-md-12" style="padding-bottom: 20px; background: #daeae8;">
+    <div class="col-md-12" style="padding-bottom: 20px;">
       <h4 class="center" style="padding-top: 50px;">User Interviews</h4>
       <p style="text-align: center;"><b>User Requirements: </b>portability, ease of use, personalization of recipe search, and immediate gratification.</p>
     </div>
@@ -242,7 +250,7 @@
 
 <div class="col-md-12" style="background: #eee; padding-bottom: 50px; padding-top: 5%;">
   <h2>DESIGN</h2>
-  <div class="col-md-12" style="padding-bottom: 5%; background: #daeae8; padding-top: 2%;">
+  <div class="col-md-12" style="padding-bottom: 5%; padding-top: 2%;">
     <h4 class="center">Paper Prototype</h4>
     <div class="col-md-4">
       <div class="embed-responsive embed-responsive-16by9">
