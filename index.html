@@ -269,12 +269,12 @@
   </div>
 
 <!-- SKILLS -->
-<div class="container skills">
+<div class="container">
   <h2 style="color: #000; text-align: center; line-spacing: .15em; font-weight: 200">SKILLS</h2> <br>
-  <div class="col-sm-4">
-    <img class="photo" src="img/photos/skills_design.png" alt="">
+  <div class="col-sm-4 skills-sec">
+    <img class="skills-img" src="img/photos/skills_design.png" alt="">
     <p style="text-align: center;">
-      <strong style="font-size: 1.2em">Design</strong><br>
+      <strong style="font-size: 1.4em">Design</strong><br>
       <br>
       Human-Centered Design<br>
       Interaction Design<br>
@@ -284,10 +284,10 @@
       Visual Design
     </p>
   </div>
-  <div class="col-sm-4">
-    <img class="photo" src="img/photos/skills_research.png" alt="">
+  <div class="col-sm-4 skills-sec">
+    <img class="skills-img" src="img/photos/skills_research.png" alt="">
     <p style="text-align: center;">
-      <strong style="font-size: 1.2em">Research</strong><br>
+      <strong style="font-size: 1.4em">Research</strong><br>
       <br>
       Contextual Inquiry<br>
       Interviews<br>
@@ -296,10 +296,10 @@
       Human Cognition
     </p>
   </div>
-  <div class="col-sm-4">
-    <img class="photo" src="img/photos/skills_software.png" alt="">
+  <div class="col-sm-4 skills-sec">
+    <img class="skills-img" src="img/photos/skills_software.png" alt="">
     <p style="text-align: center;">
-      <strong style="font-size: 1.2em">Software</strong><br>
+      <strong style="font-size: 1.4em">Software</strong><br>
       <br>
       Sketch<br>
       Illustrator<br>
@@ -327,21 +327,21 @@
       <div class="row">
         <div class="col-sm-6 col-md-6 col-lg-7">
           <h3 style="color: #3acec2; font-weight: 200;">ABOUT</h3>
-          <p style="color: #ccc;">Hi, I'm Rebecca from Fountain Valley, CA.</p> 
+          <p style="color: #ddd;">Hi, I'm Rebecca from Fountain Valley, CA.</p> 
 
-          <p style="color: #ccc;">I am a problem solver and am interested in all things technology.</p>
+          <p style="color: #ddd;">I am a problem solver and am interested in all things technology.</p>
 
-          <p style="text-align: justify; color: #ccc">First and foremost, welcome to my <a href="#portfolio" class="internal" style="color:#3acec2;">design portfolio</a>! I am currently a Master of Information Science student studying Human-Computer Interaction at University of Michigan in Ann Arbor. I love going out to experience new things, meet people, and am constantly looking for more things to learn and aquire skills in.</p>
+          <p style="text-align: justify; color: #ddd">First and foremost, welcome to my <a href="#portfolio" class="internal" style="color:#3acec2;">design portfolio</a>! I am currently a Master of Information Science student studying Human-Computer Interaction at University of Michigan in Ann Arbor. I love going out to experience new things, meet people, and am constantly looking for more things to learn and aquire skills in.</p>
           
-          <p style="text-align: justify; color: #ccc">I am absolutely fascinated by the relationship between human and technology. During my time at UC Irvine, I completed an undergrad honors thesis on the perception of gravity in a rotating virtual environment and studied the effects of resulting cybersickness from the use of VR head mounted displays (Oculus Rift). This experience really spurred my interest in pursing a career in UX / Product Design.</p><br>
+          <p style="text-align: justify; color: #ddd">I am absolutely fascinated by the relationship between human and technology. During my time at UC Irvine, I completed an undergrad honors thesis on the perception of gravity in a rotating virtual environment and studied the effects of resulting cybersickness from the use of VR head mounted displays (Oculus Rift). This experience really spurred my interest in pursing a career in UX / Product Design.</p><br>
         </div>
 
-        <div class="col-sm-3 col-md-6 col-lg-4">
+        <div class="col-sm-3 col-md-6 col-lg-3 col-lg-offset-1">
           <h3 style="color: #3acec2; font-weight: 200;">EDUCATION</h3>
-          <h5 style="color: #ccc;">UNIVERSITY OF MICHIGAN, ANN ARBOR</h5>
-          <p style="color: #ccc;">Master of Science in Information<br>Specializing in Human-Computer Interaction<br>2016-2018</p>
-          <h5 style="color: #ccc;">UNIVERSITY OF CALIFORNIA, IRVINE</h5>
-          <p style="color: #ccc;">Cognitive Sciences B.S. (Honors)<br>Specialized in Computation<br>Management Minor<br>2011-2015</p>
+          <h5 style="color: #eee;">UNIVERSITY OF MICHIGAN, ANN ARBOR</h5>
+          <p style="color: #ddd;">Master of Science in Information<br>Specializing in Human-Computer Interaction<br>2016-2018</p>
+          <h5 style="color: #eee; padding-top: 4%;">UNIVERSITY OF CALIFORNIA, IRVINE</h5>
+          <p style="color: #ddd;">Cognitive Sciences B.S. (Honors)<br>Specialized in Computation<br>Management Minor<br>2011-2015</p>
           <!-- <img src="img/photos/chickenbutt.jpg" alt=""> -->
         </div>
       </div>
@@ -410,6 +410,33 @@
   <script src="js/bootstrap.min.js"></script>
   <script src="js/main.js"></script> 
   <script src="js/typewriter.js"></script>
+  <!-- smooth scroll -->
+  <script>
+  $(document).ready(function(){
+    // Add smooth scrolling to all links
+    $("a").on('click', function(event) {
+
+      // Make sure this.hash has a value before overriding default behavior
+      if (this.hash !== "") {
+        // Prevent default anchor click behavior
+        event.preventDefault();
+
+        // Store hash
+        var hash = this.hash;
+
+        // Using jQuery's animate() method to add smooth page scroll
+        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 800, function(){
+     
+          // Add hash (#) to URL when done scrolling (default click behavior)
+          window.location.hash = hash;
+        });
+      } // End if
+    });
+  });
+  </script>
   <!-- Hotjar Tracking Code for rebeccaychen.com -->
   <script>
       (function(h,o,t,j,a,r){
