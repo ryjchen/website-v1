@@ -98,6 +98,7 @@ footer {
   margin-bottom: 2em;
   overflow: hidden;
 }
+
 .project-photo {
   width: 300px;
   display: block;
@@ -203,14 +204,14 @@ footer {
 /***************************************
  PAGE: Skills
 ****************************************/
-.skills{
-  padding-bottom: 10%;
-}
-.skills_icon {
-  width: 50%;
+.skills-img {
+  padding-bottom: 5%;
+  max-width: 80%;
   display: block;
   margin: 0 auto;
-  padding-bottom: 5%;
+}
+.skills-sec {
+  padding-bottom: 10%;
 }
 /***************************************
  PAGE: CONTACT
