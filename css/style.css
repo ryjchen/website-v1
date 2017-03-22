@@ -10,7 +10,7 @@ body {
   margin: 0;
 }
 p {
-  font-size: 1em;
+  font-size: 1.05em;
   margin-bottom: 1.8em;
 }
 .name a {
@@ -309,6 +309,9 @@ footer {
   }
   .skills_icon {
     width: 35%;
+  }
+  .typewrite {
+    font-size: 1.2em !important;
   }
 }
 
